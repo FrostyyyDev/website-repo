@@ -9,8 +9,8 @@
             font-family: sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000; /* Black background */
-            color: #eee; /* Light text for contrast */
+            background-color: #000;
+            color: #eee;
         }
 
         header, section, footer {
@@ -20,19 +20,19 @@
         }
 
         header {
-            background-color: #222; /* Darker header */
+            background-color: #222;
             text-align: center;
             border-bottom: 2px solid crimson;
         }
 
         h1, h2 {
-            color: crimson; /* Crimson headings */
+            color: crimson;
         }
 
         #projects {
-            background-color: #111; /* Darker projects section */
+            background-color: #111;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(255, 0, 0, 0.2); /* Crimson shadow */
+            box-shadow: 0 2px 4px rgba(255, 0, 0, 0.2);
         }
 
         .project {
@@ -48,7 +48,7 @@
         footer {
             text-align: center;
             border-top: 2px solid crimson;
-            position: relative; /* For social icons */
+            position: relative;
         }
 
         .social-icons {
@@ -57,10 +57,16 @@
             left: 10px;
         }
 
-        .social-icons a {
-            color: white;
-            text-decoration: none;
-            margin-right: 10px;
+        .social-icons button {
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .social-icons button img {
+            width: 30px; /* Adjust size as needed */
+            height: 30px; /* Adjust size as needed */
         }
 
     </style>
@@ -92,7 +98,9 @@
     <footer>
         <p>&copy; 2025 FrostyyDev</p>
         <div class="social-icons">
-            <a href="https://discord.gg/aCrMrEwEak" target="_blank">Discord</a>
+            <button onclick="window.open('https://discord.gg/aCrMrEwEak', '_blank')">
+                <img src="discord_logo.png" alt="Discord">
+            </button>
         </div>
     </footer>
 </body>
